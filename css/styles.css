@@ -48,7 +48,7 @@ ul {
 }
 
 .section-title {
-    
+
     font-size: 36px;
     line-height: 1.16;
     color: var(--text-color-dark);
@@ -164,6 +164,11 @@ ul {
     display: block;
 }
 
+.list-link:hover,
+.list-link:focus {
+    color: var(--accent-color);
+}
+
 .current {
     color: var(--accent-color);
 }
@@ -189,7 +194,7 @@ ul {
     background-color: #C4C4C4;
     padding: 200px 0;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../images/background.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -325,7 +330,7 @@ ul {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: #AFB1B8; 
+    fill: #AFB1B8;
 }
 
 
@@ -436,8 +441,8 @@ ul {
     margin-right: 10px;
 }
 
-.joinus-item:hover .joinus-link,
-.joinus-item:focus .joinus-link {
+.joinus-link:hover,
+.joinus-link:focus {
     background: var(--accent-color);
 }
 
@@ -488,7 +493,7 @@ ul {
     margin-right: 30px;
 }
 
-.clients-section-item {  
+.clients-section-item {
     width: 170px;
     height: 92px;
 }
@@ -604,8 +609,8 @@ ul {
 .preview-section-list:hover,
 .preview-section-list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .preview-section-list:nth-child(3n) {
@@ -641,3 +646,41 @@ ul {
     max-width: 100%;
     height: auto;
 }
+
+/* .img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preview-list .preview-section-list:hover .img-wrapper::before {
+    transform: translateY(0);
+}
+
+.preview-list .preview-section-list:hover .img-subtext {
+    transform: translateY(0);
+}
+
+.img-subtext {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--background-color);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
